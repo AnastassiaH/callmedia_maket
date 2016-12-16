@@ -1,0 +1,485 @@
+@font-face {
+    font-family: "Vegur";
+    src: url(../fonts/Vegur-R_0500.otf);
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.clearfix{
+    display: block;
+}
+
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+
+.wrapper{
+    width: 960px;
+    margin: 0 auto;
+    height: auto;
+}
+
+@media (max-width: 1110px){
+    .wrapper{
+        width: auto;
+    max-width: 1110px;
+    }
+}
+
+
+.header{
+    background-color: #016FA8;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #003A5D;
+}
+
+.logo{
+    float: left;
+    margin: 15px 20px;
+}
+
+.logo p{
+    display: inline;
+}
+
+.login_form{
+    float: right;
+    margin: 20px 10px;
+}
+
+.login_form .username,
+.login_form .password{
+    height: 20px;
+    border-radius: 5px;
+    padding-left: 25px;
+}
+
+input.username{
+    background-image: url(user.png);
+    background-repeat: no-repeat;
+    background-position: 4px;
+}
+
+input.password{
+    background-image: url(key.png);
+    background-repeat: no-repeat;
+    background-position: 4px;
+}
+
+
+.login_form button{
+    height: 26px;
+    border-radius: 5px;
+    font-family: 'Droid Sans', sans-serif;
+    background-color: #026C9C;
+    color: white;
+    font-size: 10pt;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/*.navigation*/
+
+.navigation{
+    width: 100%;
+    height: auto;
+    background-color: #D2C9BB;
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #B6AFA1;
+}
+
+
+.navigation ul li{
+    float: left;
+    list-style-type: none;
+    padding: 13px 20px;
+    border-left: 1px solid #C7BFB1;
+    border-right: 1px solid #DED9CE;
+}
+
+.navigation ul li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+
+.navigation ul li:hover{
+    background-color: #BEB09E;
+}
+
+.navigation ul li:hover a{
+    color: white;
+}
+
+
+/*.banner*/
+
+.banner{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
+}
+
+.banner .intro{
+    width: 50%;
+    height: auto;
+    display: inline-block;
+    float: left;
+}
+
+.banner .intro h1{
+    font-family: Vegur;
+    color: black;
+    font-size: 24pt;
+    width: 80%;
+    line-height: 31pt;
+}
+
+.banner .intro span{
+    color: #0B74AC;
+}
+
+
+.banner .intro p{
+    font-family: 'Droid Sans';
+    padding-top: 15px;
+    font-size: 11pt;
+    color: gray;
+    padding-right: 55px;
+    text-align: justify;
+}
+
+.banner .caption{
+    display: inline-block;
+    float: left;
+    width: 50%;
+    position: relative;
+}
+
+.banner img:first-child{
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+}
+
+.banner img:nth-child(2){
+    position: absolute;
+    top: 62%;
+    left: -1%;  
+}
+
+.banner .caption p{
+    position: absolute;
+    top: 61%;
+    left: 1%;
+    color: #9CDBFC;
+    font-family: Vegur;
+    font-size: 23pt;
+    font-weight: bold;
+}
+
+.banner .caption p:last-child{
+    font-size: 15pt;
+    top: 76%;
+    left: 2%;
+}
+
+
+/*.content*/
+
+.content{
+    width: 100%;
+    height: auto;
+    background-color: #EFEFE8;
+    padding: 30px 0;
+}
+
+.content .benefits,
+.content .starter{
+    width: 28%;
+    display: inline-block;
+    float: left;
+    height: auto;
+    margin-right: 3%;
+}
+
+.content .sing_up{
+    width: 38%;
+    height: 270px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.content .title{
+    background-color: #016FA8;
+    padding: 10px;
+    font-family: 'Droid Sans';
+    color: white;
+    font-style: italic;
+    font-size: 14pt;
+    border-radius: 5px 5px 0 0;
+}
+
+.content .benefits ul li{
+    list-style: none;
+    background: url(ok_icon.png) no-repeat 0 14px;
+    padding-left: 35px;
+    padding-top: 16px;
+    font-size: 13pt;
+    font-family: 'Droid Sans';
+    color: gray;
+}
+
+.content .benefits ul{
+    padding-left: 12px;
+}
+
+.content button.show{
+    margin-top: 15px;
+    background-color: #026FA0;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 11pt;
+    font-family: 'Droid Sans';
+    font-weight: bold;
+}
+
+
+.content .starter ul li{
+    list-style: none;
+    background-image: url(box_icon.png);
+    background-repeat: no-repeat;
+    background-position: 10px 25px;
+    padding-left: 50px;
+    padding-top: 20px;
+    color: #006BA9;
+    font-family: 'Droid Sans';
+    font-weight: bold;
+    font-size: 13pt;
+    width: 85%;
+    position: relative;
+}
+
+.content .starter ul li span{
+    font-size: 10pt;
+    color: grey;
+    font-weight: normal;
+}
+
+.content .starter ul li img{
+    position: absolute;
+    top: 55%;
+    left: 80%;
+}
+
+.content .starter ul li .info_hover{
+    display: none;
+    position: absolute;
+    top: 35%;
+    left: 92%;
+    width: 160px;
+    height: 63px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.content .starter ul li .info_hover:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: -4%;
+    width: 13px;
+    height: 13px;
+    background-color: black;
+    transform: rotate(45deg);
+}
+
+.content .starter ul li img:hover{
+    cursor: pointer;
+}
+
+.content .starter ul li img:hover ~ .info_hover{
+    display: block;
+}
+
+.content .starter ul li .info_hover p{
+    color: white;
+    padding: 5px 0 0 10px;
+    font-size: 13pt;
+    font-family: 'Droid Sans';
+    font-weight: bold;
+}
+
+.content .starter ul li .info_hover p:last-child{
+    font-size: 8pt;
+    font-weight: normal;
+    
+}
+
+.content .sing_up p:nth-child(2){
+    padding: 20px;
+    text-align: justify;
+    font-family: 'Droid Sans';
+    font-size: 11pt;
+    color: gray;
+}
+
+.content .form{
+    padding: 0 20px 20px 20px;
+}
+
+.content .form label{
+    color: gray;
+    font-family: 'Droid Sans';
+    font-size: 12pt;
+    width: 25%;
+    float: left;
+    padding-top: 6px;
+}
+
+.content .form input{
+    width: 65%;
+    padding: 7px;
+    border-radius: 5px;
+    float: right;
+}
+
+.content .form button{
+    display: block;
+    margin-top: 15px;
+    background-color: #026FA0;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 11pt;
+    font-family: 'Droid Sans';
+    font-weight: bold;
+}
+
+
+.supported_parties{
+    padding: 20px 0;
+    width: 100%;
+    height: auto;
+    background-color: #EFEFE8;
+}
+
+.supported_parties .cards,
+.supported_parties .newsletter{
+    display: inline-block;
+}
+
+.supported_parties .cards{
+    float: left;
+    margin-top: 20px;
+}
+
+.supported_parties .cards img{
+    margin-right: 15px;
+}
+
+.supported_parties .newsletter{
+    float: right;
+}
+
+.supported_parties .newsletter p{
+    font-size: 15pt;
+    font-family: 'Droid Sans';
+    color: #006BA9;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.supported_parties .newsletter input{
+    padding: 7px;
+    border-radius: 5px;
+    width: 240px;
+}
+
+.supported_parties .newsletter button{
+    display: inline-block;
+    background-color: #026FA0;
+    border-radius: 10px;
+    color: white;
+    padding: 7px;
+    font-size: 10pt;
+    font-family: 'Droid Sans';
+    font-weight: bold;
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #016DA9;
+}
+
+.footer .navigation_bottom{
+    background-color: #016DA9;
+        display: inline-block;
+}
+
+.footer .navigation_bottom ul li {
+    float: left;
+    list-style-type: none;
+    padding: 13px 10px;
+}
+
+
+.footer .navigation_bottom ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 10pt;
+}
+
+.footer .copyright{
+    float: right;
+}
+
+.footer .copyright p{
+    display: inline-block;
+    color: white;
+    font-size: 10pt;
+    margin-top: 14px;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+.footer .copyright p:first-child{
+    padding-right: 5px;
+    border-right: 1px solid white;
+}
+
+.footer .copyright p:last-child{
+    padding-left: 5px;
+}
