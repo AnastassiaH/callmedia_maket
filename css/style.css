@@ -194,6 +194,9 @@ input.password{
     position: absolute;
     top: 62%;
     left: -1%;  
+    width: 50%;
+    max-width: 217px;
+    height: auto;
 }
 
 .banner .caption p{
@@ -483,3 +486,445 @@ input.password{
 .footer .copyright p:last-child{
     padding-left: 5px;
 }
+
+
+/*style for devices*/
+
+@media only screen and (max-width: 1024px){    
+    .wrapper{
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 780px){
+    .logo{
+        margin: 15px 5px;
+    }
+    
+    .login_form .username, .login_form .password{
+        width: 125px;
+    }
+    
+    .navigation ul li{
+        padding: 10px 15px;
+    } 
+    
+    .banner .intro p{
+    padding-right: 25px;
+    padding-top: 10px;
+    font-size: 10pt;
+    }
+    
+    .banner .intro h1{
+        font-size: 20pt;
+        line-height: 23pt;
+    }
+    
+    .banner img:nth-child(2){
+        top: 55%;
+    }
+    
+    .banner .caption p{
+        top: 52%;
+        font-size: 20pt;
+    }
+    
+    .banner .caption p:last-child {
+    font-size: 14pt;
+    top: 70%;
+    }
+    
+    .content{
+        padding: 30px 0 10px 0;
+    }
+    
+    .content .benefits ul li {
+        font-size: 9pt;
+        background: url(ok_icon.png) no-repeat 0 8px;
+        padding-left: 35px;
+        padding-top: 16px;
+    }
+
+    .content .starter ul li{
+        font-size: 10pt;
+    }
+
+    .content .sing_up p:nth-child(2){
+        padding: 12px;
+        font-size: 10pt;
+    }
+
+    .content .form label{
+            font-size: 10pt;
+    }
+
+    .content .form input{
+            padding: 4px;
+    }
+    
+    .supported_parties{
+            padding: 0px 0 20px 0;
+    }
+    
+    .footer .navigation_bottom ul li a,
+    .footer .copyright p{
+        font-size: 9pt;
+    }
+    
+    .footer .navigation_bottom ul li{
+        padding: 13px 6px;
+    }
+    
+}
+
+@media only screen and (max-width: 668px){
+    
+    .navigation ul li a{
+        font-size: 10pt;    
+    }
+    
+    .banner .caption{
+        margin-top: 15px;
+    }
+    
+    .content .benefits{
+        width: 25%;
+    }
+    
+    .content .starter{
+        width: 28%;
+    }
+    
+    .content .sing_up{
+        width: 43%;
+    }
+
+    .content .benefits, .content .starter{
+        margin-right: 2%;
+    }
+    
+    .content .form button{
+        margin-top: 35px;
+    }
+    
+    .content button.show-two{
+        margin-top: 42px;
+    }
+    
+    .supported_parties{
+        padding-top: 10px;
+    }
+    
+    .supported_parties .newsletter input{
+        width: 200px;
+    }
+    
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape) {
+    .header .logo img{
+        max-width: 178px;
+        width: 76%;
+    }
+    
+    .login_form .username, .login_form .password{
+        width: 99px;
+    }
+    
+    .login_form {
+        margin: 20px 2px;
+    }
+    
+    .banner img:first-child{
+        margin-top: 28px;
+    }
+    
+    .banner .intro h1{
+        width: 160%;
+    }
+    
+    .banner img:nth-child(2){
+        top: 60%;
+    }
+    
+    .banner .caption p {
+        top: 57%;
+        font-size: 15pt;
+    }
+    
+    .banner .caption p:last-child{
+        font-size: 11pt;
+        top: 72%;
+    }
+    
+    .content .benefits, 
+    .content .starter{
+        width: 47%;
+    }
+    
+    .content .sing_up{
+        width: 100%;
+        margin-top: 15px;
+        height: auto;
+    }
+    
+    .content .form{
+            padding: 0 20px 0px 20px;
+    }
+    
+    .supported_parties .cards img {
+        max-width: 100px;
+    }
+    
+    .supported_parties .newsletter input{
+        width: 165px;
+    }
+    
+    .supported_parties .cards img{
+        margin-right: 4px;
+    }
+    
+    .footer .copyright{
+        float: none;
+    }
+    
+    .footer .copyright p{
+       margin: 0px 0px 10px 6px;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 415px){    
+    .logo{
+     padding-left: 7px;
+    }
+    
+    .login_form{
+        margin: 0px 10px 20px 10px;
+    }
+    
+    .login_form .username, 
+    .login_form .password {
+        width: 29%;
+    }
+    
+    .navigation ul{
+        width: 98%;
+        margin: 0 auto;
+    }
+    
+    .navigation ul li{
+            padding: 8px 8px;
+        border: 0px;
+    }
+    
+    .navigation ul li a{
+        font-size: 10pt;
+    }
+    
+    .banner{
+        padding-top: 15px;
+    padding-bottom: 15px;
+    }
+    
+    .banner .intro{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .banner .caption{
+        width: 100%;
+    }
+    
+    .content{
+            padding: 20px 0 0px 0;
+    }
+    
+    .content .benefits, 
+    .content .starter{
+        width: 47%;
+    }
+    
+    .content .sing_up{
+        width: 100%;
+        margin-top: 20px;
+        height: auto;
+    }
+    
+    .content button.show-two{
+        margin-top: 43px;
+    }
+    
+    .content .form button{
+        margin-left: -18px;
+    }
+    
+    .supported_parties .cards{
+        margin-top: 10px;
+    }
+    
+    .supported_parties .newsletter{
+        margin-top: 15px;
+    }
+    
+    .supported_parties .newsletter input{
+        width: 270px;
+    }
+    
+    .footer .navigation_bottom ul li{
+        padding: 13px 8px;
+    }
+    
+    .footer .navigation_bottom ul li a{
+        font-size: 10pt;
+    }
+    
+    .footer .copyright{
+        float: none;
+            margin-left: 8px;
+    }
+    
+    .footer .copyright p{
+        margin: 0 0 15px 0;
+    }
+}
+
+@media only screen and (max-width: 376px){ 
+    .navigation ul li{
+        padding: 8px 6px;
+    }
+    
+    .login_form .username,
+    .login_form .password   {
+        width: 27%;
+    } 
+    
+    .navigation ul li a,
+    .content .starter ul li{
+        font-size: 9pt;
+    }
+    
+     .banner .intro h1{
+        width: 100%;
+    }
+    
+    .content .starter ul li span{
+        font-size: 8pt;
+    }
+    
+    .content .starter ul li img{
+        left: 77%;
+    }
+    
+    .content button.show-two{
+        margin-top: 49px;
+    }
+    
+    .supported_parties .newsletter input{
+        width: 245px;
+    }
+    
+    .footer .navigation_bottom ul li a{
+        font-size: 9pt;
+    }
+}
+
+@media only screen and (max-width: 321px){
+    .logo{
+        float: none;
+        width: 65%;
+        margin: 0px auto;
+        padding: 5px 0;
+    }
+    
+    .login_form{
+        float: none;
+        width: 65%;
+        margin: 0 auto;
+    }
+    
+    .login_form .username, .login_form .password{
+        width: 80%;
+        margin-bottom: 5px;
+    }
+    
+    .login_form button{
+        margin: 0 auto;
+        width: 185px;
+        margin-bottom: 5px;
+        display: block;
+        margin-left: 0px;
+    }
+    
+    .navigation ul{
+        width: 100%;
+    }
+    
+    .navigation ul li{
+        padding: 8px 4px;
+    }
+    
+    .navigation ul li a{
+        font-size: 8pt;
+    }
+    
+    .content .benefits, .content .starter{
+        width: 100%;
+    }
+    
+    .content .benefits{
+        margin-bottom: 15px;
+    }
+    
+    .content button.show-two{
+        margin-top: 20px;
+    }
+    
+    .content .form{
+        padding: 0 20px 5px 20px;
+    }
+    
+    .banner .caption p{
+        font-size: 17pt;
+    }
+    
+    .banner .caption p:last-child {
+        font-size: 12pt;
+    }
+    
+    .supported_parties{
+        padding: 0px 0 10px 0;
+    }
+    
+    .supported_parties .cards img {
+        max-width: 120px;
+    }
+    
+    
+    .supported_parties .newsletter input{
+        width: 194px;
+        margin-bottom: 10px;
+        display: inline;
+    }
+    
+    .supported_parties .newsletter button{
+        width: 27%;
+    }
+    
+    .footer .navigation_bottom ul li{
+        padding: 13px 6px;
+    }
+    
+    .footer .navigation_bottom ul li a{
+        font-size: 8pt;
+    }
+    
+    .footer .copyright p{
+        font-size: 8pt;
+    }
+}
+
